@@ -1,0 +1,28 @@
+.hero {
+    background: linear-gradient(40deg, rgb(0, 68, 255) 0%, rgb(0, 255, 255) 100%);
+}
+
+.title {
+    color: white;
+}
+
+.recent-cities button {
+    background: linear-gradient(40deg, rgb(0, 68, 255) 0%, rgb(0, 255, 255) 100%);
+    color: white;
+    opacity: 50%;
+}
+
+.recent-cities button:hover {
+    scale: 110%;
+}
+
+.five-day-forecast-text {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.search button {
+    background: linear-gradient(40deg, rgb(0, 68, 255) 0%, rgb(0, 255, 255) 100%);
+    color: white;
+    opacity: 50%;
+}

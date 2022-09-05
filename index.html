@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <!-- Hero -->
+  <section class="hero is-medium">
+    <div class="hero-body">
+      <p class="title has-text-centered">
+        Weather Dashboard
+      </p>
+    </div>
+  </section>
+  <!-- Text Search Box -->
+  <section>
+    <div class="box city-search-section mx-auto">
+      <div class="columns">
+        <div class="column my-2 has-text-centered  city-search is-one-fifth">
+          Search For A City
+        </div>
+        <div class="column search is-four-fifths">
+          <div class="field has-addons">
+            <div class="control search is-expanded">
+              <input type="text" class="input search-bar" placeholder="">
+            </div>
+            <div class="control">
+              <button class="button">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- current weather -->
+  <section>
+    <div class="currentWeatherSection">
+      <div class="columns mt-3">
+        <div class="column is-one-third">
+          <div class="container recentSearches has-text-centered">
+            Recent Cities
+          </div>
+          <div class="recent-cities is-fullwidth is-3">
+            <!-- recent cities will appear here -->
+          </div>
+        </div>
+        <div class="column is-two-thirds">
+          <div class="container">
+            <!-- current weather displayed for searched city -->
+            <div class="box is-fullwidth weather-current">
+              <h2 class="city"></h2>
+              <h2 class="temp"></h2>
+              <img src="" alt="" class="weathericon">
+              <p class="description"></p>
+              <p class="humidity"></p>
+              <p class="wind"></p>
+              <p class="uvindex tag is-light"></p>
+            </div>
+            <div class="container is-two-thirds five-day-forecast">
+              <div class='five-day-forecast-text has-text-centered is-fullwidth mt-5 '>5-Day Forecast</div>
+              <div class="container mt-5">
+                <div class="box columns five-day-weather">
+                  <!-- Five Day Forecast Will Appear Here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
